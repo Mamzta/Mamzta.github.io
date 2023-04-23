@@ -1,0 +1,87 @@
+body{
+   background-color: #fff;
+}
+
+video{
+    max-width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+article.card{
+    max-width: 500px;
+    background-color:aliceblue;
+    border-radius: 8px;
+    margin: 1rem;
+    box-shadow: 0 0 12px #d7d7d7;
+    color: blueviolet;
+    text-align: center;
+}
+
+/* 
+En caso de editar el video: 
+.header-card video{
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+} 
+*/
+
+.concepto-card{
+    margin-top: 1rem;
+    color: crimson;
+}
+
+.card footer{
+    padding: 0 1rem;
+}
+
+.ilustre-card{
+    display: flex;
+}
+
+.card-card{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.Textos{
+    text-align: center;
+    color: blueviolet;
+}
+
+/** Footer game **/
+.cta{
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color:#fff;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 30px;
+}
+
+.footer_icons{
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.card{
+    text-align: center;
+}
+
+.enlace{
+    display: flex;
+    width: none;
+    height: 40;
+}
+
+
+
+
+
+
