@@ -80,6 +80,27 @@ En caso de editar el video:
     height: 40;
 }
 
+/*quizz*/
+
+.enlace{
+    display: flex;
+    width: none;
+    height: 40;
+}
+
+.GameQ{
+    text-align: center;
+}
+
+.textgame{
+    background-color:cyan;
+}
+
+.allgame{
+    background-color:#2091F9;
+    color: black;
+}
+
 
 
 
