@@ -2,6 +2,11 @@ body{
    background-color: #fff;
 }
 
+.secondcolor{
+    background-color: #2091F9;
+}
+
+
 video{
     max-width: 100%;
 }
@@ -51,7 +56,7 @@ En caso de editar el video:
 
 .Textos{
     text-align: center;
-    color: blueviolet;
+    color: black;
 }
 
 /** Footer game **/
