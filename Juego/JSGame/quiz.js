@@ -1,18 +1,19 @@
 //arreglo que contiene el orden correcto de las palabras
-let orden_correcto = ['terminal', 'cp', 'sudo', 'cd', 'ls', 'cowsay', 'hello world'];
+let orden_correcto = ['terminal', 'cp', 'sudo', 'cd', 'ls', 'cowsay', 'hello world', 'cat'];
 
 //Palabras desordenadas para mostrar en opciones
-let palabras_juego = ['cp', 'hello world', 'terminal', 'sudo', 'ls', 'cowsay', 'cd'];
+let palabras_juego = ['cp', 'hello world', 'terminal', 'sudo', 'ls', 'cowsay', 'cat', 'cd'];
 
 //contenedr de las opciones
 let contenedorOpciones = document.getElementById("opciones");
 //boton comprobar
 let comprobar = document.getElementById("comprobar");
+
 //texto donde se muestra el resultado
 let txtResultado = document.getElementById("resultado");
 
 //Arreglo que contiene el orden de las palabras que el usuario va eligiendo. Tambien me sirve para saber las posiciones disponibles
-let posDisponible = ["", "", "", "", "", "", ""];
+let posDisponible = ["", "", "", "", "", "", "", ""];
 
 //Función que agrega las opciones 
 function agregarOpciones(){
@@ -82,12 +83,35 @@ comprobar.onclick = function(){
         }
 
         if(totalAciertos==orden_correcto.length){
-            txtResultado.innerHTML = "Muy bien!!";
+            txtResultado.innerHTML = "¡Excelente!";
         }else{
-            txtResultado.innerHTML = "Existen errores!!";
+            txtResultado.innerHTML = "Vuelve a intentarlo ¡no te rindas!";
         }
     }else{
-        alert("Completa las palabras");
+        alert("Faltan palabras en el recuadro, inténtalo otra vez ¡Tú puedes!");
     }
-
+   
 }
+
+reiniciarJuego.onclick = function() {
+    // Restablecer el arreglo posDisponible y los estilos de fondo
+    posDisponible = ["", "", "", "", "", "", ""];
+    let spans = document.getElementsByTagName("span");
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].innerHTML = "";
+        spans[i].style.background = "#ccc";
+    }
+    
+    // Restablecer el resultado
+    txtResultado.innerHTML = "";
+    
+    // Volver a agregar las opciones
+    contenedorOpciones.innerHTML = "";
+    agregarOpciones();
+}
+
+// Obtener referencia al contenedor del botón de reinicio
+let contenedorBoton = document.getElementById("contenedorBoton");
+// Agregar el contenedor del botón de reinicio al documento
+document.body.appendChild(contenedorBoton);
+
