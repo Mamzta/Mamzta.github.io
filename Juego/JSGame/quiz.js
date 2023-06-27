@@ -1,8 +1,8 @@
 //arreglo que contiene el orden correcto de las palabras
-let orden_correcto = ['terminal', 'cp', 'sudo', 'cd', 'ls', 'cowsay', 'hello world', 'cat'];
+let orden_correcto = ['terminal', 'cp', 'sudo', 'cd', 'ls', 'cowsay', 'hello world'];
 
 //Palabras desordenadas para mostrar en opciones
-let palabras_juego = ['cp', 'hello world', 'terminal', 'sudo', 'ls', 'cowsay', 'cat', 'cd'];
+let palabras_juego = ['cp', 'hello world', 'terminal', 'sudo', 'ls', 'cowsay', 'cd'];
 
 //contenedr de las opciones
 let contenedorOpciones = document.getElementById("opciones");
